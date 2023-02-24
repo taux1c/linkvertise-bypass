@@ -5,7 +5,7 @@ import base64
 import requests
 
 # -------------------------------------------
-
+prompt = "What link would you like to bypass?"
 def lv_bypass(url):
     client = requests.Session()
     
@@ -58,7 +58,7 @@ def lv_bypass(url):
 # -------------------------------------------
 
 # Add URL
-url = "https://domain.tld/XXXXXX/XXX" 
+url = input(f"{prompt}:\n")
 bypassed = lv_bypass(url)
 
 print(bypassed)
